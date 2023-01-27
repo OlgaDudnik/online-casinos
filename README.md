@@ -1,1 +1,3 @@
 # online-casinos
+
+gulp watch

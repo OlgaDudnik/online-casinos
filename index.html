@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Casinos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap&family=Cabin:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.min.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon-casino.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="main">
+          <h2 class="main__title">
+            Online Casinos in australia reviewsand rating
+          </h2>
+          <p class="main__desc-text">
+            HEX Online Casino has taken a few of the top UK online casinos and
+            personally tried them out. We have selected only the best online
+            casinos so that you, the player, knows that you are being directed
+            to a safe and reliable online casino. With online casino reviews,
+            you can find the ideal online casino for you.
+          </p>
+        </div>
+
+        <nav class="site-nav">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">
+                <span>
+                  <svg width="50" height="50">
+                    <use
+                      xlink:href="./assets/images/sprite.svg#flag-australia"
+                    ></use>
+                  </svg>
+                </span>
+                <span class="site-nav__text">Australia Licensed</span>
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">
+                <span>
+                  <svg width="40" height="40">
+                    <use xlink:href="./assets/images/sprite.svg#secure"></use>
+                  </svg>
+                </span>
+                <span class="site-nav__text">Secure & Trusted</span>
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">
+                <span>
+                  <svg width="40" height="40">
+                    <use xlink:href="./assets/images/sprite.svg#dollar"></use>
+                  </svg>
+                </span>
+                <span class="site-nav__text">Fast Withdrawals</span>
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">
+                <span class="site-nav__text accent">How do we rate?</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="casino-section">
+          <table>
+            <thead>
+              <tr class="casino-cells">
+                <th class="casino-cells__item">№</th>
+                <th class="casino-cells__item">Casino</th>
+                <th class="casino-cells__item">Bonus</th>
+                <th class="casino-cells__item">Rating</th>
+                <th class="casino-cells__item">Deposit</th>
+                <th class="casino-cells__item">Play Now</th>
+              </tr>
+            </thead>
+            <tbody class="casino-list" id="t-body"></tbody>
+          </table>
+          <div class="box-download">
+            <button
+              onclick="downloadRows()"
+              type="button"
+              class="button-download"
+            >
+              See all casino
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="scripts.min.js"></script>
+  </body>
+</html>
