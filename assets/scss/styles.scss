@@ -175,6 +175,7 @@ table {
         &:not(:last-child) {
           margin-bottom: 25px;
         }
+        border-radius: 15px;
       }
 
       &:hover {
@@ -213,7 +214,7 @@ table {
           &:not(:last-child) {
             border-top: 1px solid rgba(232, 232, 232, 0.1);
             border-bottom: 1px solid rgba(232, 232, 232, 0.1);
-            @media screen and (min-width: 414px) {
+            @media screen and (max-width: 850px) {
               border: none;
             }
           }
@@ -223,7 +224,7 @@ table {
             border-right: 1px solid rgba(232, 232, 232, 0.1);
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
-            @media screen and (min-width: 414px) {
+            @media screen and (max-width: 850px) {
               border: none;
             }
           }
@@ -232,6 +233,15 @@ table {
 
       td {
         &:first-child {
+          border-top-left-radius: 15px;
+          border-bottom-left-radius: 15px;
+        }
+        &:last-child {
+          border-top-right-radius: 15px;
+          border-bottom-right-radius: 15px;
+        }
+
+        &:first-child {
           min-width: 128px;
           @media screen and (max-width: 850px) {
             display: none;
@@ -239,10 +249,6 @@ table {
         }
       }
     }
-  }
-
-  tr .casino-list__item {
-    // min-width: 1275px;
   }
 
   tr td .inner {
@@ -358,7 +364,7 @@ td {
 .box-download {
   display: grid;
   place-items: center;
-  padding-top: 50px;
+  padding: 50px 0;
 }
 
 .button-download {
