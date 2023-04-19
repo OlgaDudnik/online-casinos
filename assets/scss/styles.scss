@@ -84,7 +84,7 @@ img {
   &__list {
     display: flex;
     gap: 30px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     flex-wrap: wrap;
     @media screen and (max-width: 850px) {
       gap: 10px;
